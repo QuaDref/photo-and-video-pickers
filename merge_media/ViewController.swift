@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         imagePicker.delegate = self
         imagePicker.sourceType = .photoLibrary
         imagePicker.allowsEditing = false
-        imagePicker.mediaTypes = [kUTTypeMovie as String]
+        imagePicker.mediaTypes = [kUTTypeMovie as String, kUTTypeImage as String]
         imagePicker.videoQuality = .typeHigh
         present(imagePicker, animated: true)
     }
